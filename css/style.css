@@ -1,0 +1,288 @@
+/* Global Layout Set-up */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #4a4a4a;
+    font-size: 1em;
+    background-color:rgb(255, 255, 255);
+}
+
+/* Link Styles */
+
+a {
+    text-decoration: none;
+    color: #494848;
+}
+
+a:hover {
+    color:lightseagreen;
+}
+
+.main-nav {
+    padding: 1em 0;
+
+}
+
+.main-name {
+    font-size: 1.5em; 
+    font-weight: bolder;
+    margin: 0; 
+    padding: 10px 10px 10px 0; 
+
+}
+
+.navagation a {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 13px; 
+    margin: 10px 0; 
+}
+
+header,
+.contact-information,
+.footer-nav {
+    background-color: #f1f1f198;
+
+}
+.portfolio-section .container {
+    background-color: #fff;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.portfolio-section,
+.contact-information {
+    padding: 1em 0 2em 0;
+}
+
+.portfolio-container {
+    padding: 1em 0; 
+    margin: 1.38em auto;
+}
+
+.container .profile-pic {
+    padding: 0 0 2em 0;
+    margin: auto;
+    width: 80%;
+}
+
+.contact-bio {
+    padding-bottom: 1em;
+}
+
+.portfolio-section p {
+    font-weight: 200;
+    line-height: 1.2em;
+    color: #3d3d3d;
+}
+
+.section-title {
+    text-transform: uppercase;
+    padding: 30px;
+
+  }
+.contact-information {
+    margin: 0 auto;
+}
+
+.contact-bio {
+    padding-bottom: .5em;
+}
+
+.phone-number {
+    padding-bottom: .5em;
+}
+
+.email {
+    padding-bottom: .5em;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+.footer-nav {
+    padding: 1em .5em 2em;
+}
+
+.footer-name {
+    float: left;
+}
+
+.footer-navagation {
+    display: none;
+}
+
+.back-top {
+    display: inline;
+    float: right;
+}
+
+
+.row {
+    padding-bottom: 2em;
+}
+
+.row h3 {
+    font-weight: 900;
+    margin: 1em 0;
+}
+
+.row p {
+    font-weight: 300;
+    line-height: 1.4em;
+    padding: 0 20px;
+}
+
+
+.row img {
+    width: 100%;
+    padding: 20px 0 10px;
+}
+
+hr {
+    width: 94%;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+
+.cf::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (min-width: 768px) {
+
+
+    .navagation ,
+    .navagation li {
+      display: inline-block;
+    }
+
+    .navagation a {
+      margin: 10px 5px;
+    }
+
+    .profile-pic {
+        float: right;
+        padding-right: .8em;
+        margin: 3em 0;
+    }
+
+    .bio {
+        padding: 1em 0 0 1.1em;
+        margin: 3em 0;
+        text-align: left;
+    }
+
+    .portfolio-container p {
+      text-align: left;
+    }
+
+    .footer-navagation a {
+        text-transform: uppercase;
+        font-weight: bolder;
+        padding: 10px;
+    
+    }
+
+    .row-g {
+      display: grid;
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+      
+    }
+
+    .portfolio-section .row-g {
+        grid-template-columns: repeat(2,1.2fr);
+    }
+    
+    .navagation {
+        display: inline;
+        margin: auto;
+    }
+
+    .footer-navagation {
+        display: inline; 
+        float: right;
+    }
+
+    .footer-navagation li {
+        float: left;
+        padding-right: 1.5em;
+    }
+
+    .footer-name {
+        padding-left: 1.5em;
+    }
+    .back-top {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    
+    .profile-pic {
+        padding: 0 1.5em;
+        margin: 1em 4em 3em 3em;
+    }
+    .bio {
+        padding: 2em 31.5em 1em 1em;
+        text-align: left;
+        margin: 0px 6em;
+        font-size: 1.18em;
+    }
+
+    .main-name,
+    .navagation ,
+    .navagation li{
+      display: inline;
+    }
+
+    .main-name {
+      float: left;
+      padding: 1em 0 0 1.5em;
+    }
+  
+    .navagation {
+        margin:initial;
+        float: right;
+        padding: 1em 1.5em 0 0;
+    }
+
+    .navagation li {
+      float: left;
+      margin-left: 5px;
+    }
+
+    .navagation a {
+      margin: 2px 0;
+    }
+
+    .portfolio-container img {
+      width: 367px;
+    }   
+
+    .portfolio-section .row-g {
+        grid-template-columns: repeat(3,1.2fr);
+    }
+}
