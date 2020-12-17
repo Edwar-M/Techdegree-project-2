@@ -3,14 +3,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Georgia', sans-serif;
 }
 
 body {
     margin: 0;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    color: #4a4a4a;
-    font-size: 1em;
     background-color:rgb(255, 255, 255);
 }
 
@@ -157,9 +155,16 @@ ul {
 }
 
 hr {
-    width: 94%;
+    width: 100%;
     margin: 0 auto;
-    background-color: lightgrey;
+    color: lightgrey;
+}
+
+.navagation li {
+    background-color: white;
+    padding: .1em 0;
+    margin-bottom: 5px;
+    font-weight: bolder;
 }
 
 
@@ -169,12 +174,34 @@ hr {
     clear: both;
 }
 
+.main-name,
+.profile-pic,
+.navagation
+.bio {
+    margin-bottom: 1em;
+}
+
+.profile-pic {
+    margin-top: 3em;
+    width: 75%;
+}
+
+.bio {
+    padding: .5em 1em 3em;
+}
+
+li {
+    font-weight: bolder;
+}
 @media screen and (min-width: 768px) {
 
 
     .navagation ,
     .navagation li {
       display: inline-block;
+    }
+    .navagation li {
+        background-color: transparent;
     }
 
     .navagation a {
@@ -185,6 +212,7 @@ hr {
         float: right;
         padding-right: .8em;
         margin: 3em 0;
+        width: 50%;
     }
 
     .bio {
@@ -243,12 +271,13 @@ hr {
     
     .profile-pic {
         padding: 0 1.5em;
-        margin: 1em 4em 3em 3em;
+        margin: 1em 4em 3em 1em;
+        width: 30%;
     }
     .bio {
         padding: 2em 31.5em 1em 1em;
         text-align: left;
-        margin: 0px 6em;
+        margin: 0 2em;
         font-size: 1.18em;
     }
 
